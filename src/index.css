@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #0F1015;
+
+  --primary-dark: #2C3C43;
+  --primary-darker: #1F2A2F;
+  --background: #0F1015;
+  --background-light: #1A1D24;
+  --accent-green: #3F6E24;
+  --accent-green-hover: #4A852C;
+  --text-primary: #FFFFFF;
+  --text-secondary: #B0B8C4;
+  --border-color: #2D3748;
+  --danger: #DC3545;
+  --warning: #FFC107;
+  --success: #28A745;
+  --info: #17A2B8;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--background);
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+a {
+  font-weight: 500;
+  color: var(--accent-green);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--accent-green-hover);
+}
+
+button {
+  border-radius: 6px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 0.95em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--accent-green);
+  color: white;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+button:hover {
+  background-color: var(--accent-green-hover);
+}
+button:focus,
+button:focus-visible {
+  outline: 2px solid var(--accent-green);
+  outline-offset: 2px;
+}
+
+input, select, textarea {
+  font-family: inherit;
+  font-size: 0.95em;
+  padding: 0.6em 1em;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background-color: var(--background-light);
+  color: var(--text-primary);
+  transition: border-color 0.25s;
+}
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--accent-green);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.75em 1em;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+th {
+  background-color: var(--primary-dark);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+tr:hover {
+  background-color: var(--background-light);
+}
